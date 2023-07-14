@@ -29,7 +29,7 @@ const SignupPage = () => {
             <input className='p-2 border broder-gray-400 rounded-lg mb-4 focus:outline-none
             focus:border-gray-600' type="password" id='password' value={user.password} placeholder='password' onClick={(e) => setUser({ ...user, password: e.target.value })} />
             <button onClick={onSignup} className='p-2 mb-4 border border-gray-400 rounded-lg focus:outline-none focus:border-gray-600'>Signup</button>
-            <Link href='/login'>Login</Link>
+            <p>Already have an account? <Link href='/login' className='text-blue-400'>Login</Link></p>
         </div>
     );
 };
